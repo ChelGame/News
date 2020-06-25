@@ -1,0 +1,59 @@
+.right_aside {
+  max-width: 250px;
+  width: 100%;
+}
+
+.car {
+  width: 250px;
+  height: 400px;
+  display: inline-block;
+
+  margin-bottom: 19px;
+
+  background: url(image/car.png) no-repeat;
+
+  cursor: pointer;
+}
+
+.man {
+  width: 250px;
+  height: 425px;
+  display: inline-block;
+
+  background: url(image/man.png) no-repeat;
+
+  cursor: pointer;
+}
+
+@media (max-width: 1020px) {
+  .right_aside {
+    display: flex;
+    max-width: none;
+    width: auto;
+  }
+
+  .man {
+    height: 400px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+
+  .right_aside {
+    justify-content: flex-start;
+    max-width: 310px;
+    width: 100%;
+
+    margin-top: 20px;
+
+    overflow-x: scroll;
+  }
+
+  .car, .man {
+    display: inline-block;
+    min-width: 250px;
+
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,149 @@
+/* general*/
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial;
+}
+
+html, body {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+
+  list-style: none;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.fixed-container {
+  min-width: 310px;
+  max-width: 1000px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.category {
+  color: #d6d6da;
+  font-size: 12px;
+}
+
+.font {
+  font-size: 16px;
+}
+
+.icon {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.container {
+  width: 100%;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.un__scroll {
+  overflow: hidden;
+}
+/* Close general */
+
+
+
+
+
+
+
+/* Open head */
+.head {
+  width: 100%;
+
+  padding: 20px 0;
+
+  background-color: #00122f;
+
+  font-style: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.head__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frash__news {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.head__link {
+  text-decoration: underline;
+}
+
+@media (max-width: 660px) {
+  .head__flex {
+    justify-content: center;
+  }
+
+  .head__time {
+    display: none;
+  }
+
+  .frash__news {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width:750px) {
+ .fixed-container {
+   max-width: 800px;
+ }
+}
+/*Close head  */
+
+/* Комментирую правила, я их знал, и часть применял, но в этой работе нужна их небольшая часть, что я и добавил, ну и лист стайл тайп на лист стайл поменял, все */
+
+/* Правила, по которым я форматирую строки кода css:
+Вначале идут контент, размеры, расположение и все что связано с блоком
+Дальше идут поля, отступы, границы
+Дальше идет фон
+Дальше идет текст
+Дальше идет все, что не попало в группы выше, анимация, сокрытие и т.д. */
